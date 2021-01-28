@@ -1,14 +1,14 @@
 import { Injectable, Inject, NotFoundException } from '@nestjs/common';
-import { User } from './entity/users.entity';
+import User from './entity/users.entity';
 import { CreateUserDto } from './dto/create-user.dto';
 //import { FinanceService } from 'src/finance/finance.service';
 var sha256 = require('sha256');
 const Web3 = require('web3');
 const web3 = new Web3('https://ropsten.infura.io/v3/8d1234baedad4a588a49a51ac993aaf8');
-// import { createWriteStream } from 'fs';
-// import * as soap from 'soap';
-// import * as bcrypt from 'bcrypt';
-// import Axios from 'axios';
+import { createWriteStream } from 'fs';
+import * as soap from 'soap';
+import * as bcrypt from 'bcrypt';
+import Axios from 'axios';
 
 
 

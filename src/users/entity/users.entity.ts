@@ -1,8 +1,8 @@
-import { Table, Column, Model, PrimaryKey,AutoIncrement, HasOne } from 'sequelize-typescript';
+import { Table, Column, Model, PrimaryKey } from 'sequelize-typescript';
 
 
 @Table({})
-export class User extends Model<User> {
+ class User extends Model<User> {
 
   @PrimaryKey
   @Column
@@ -33,3 +33,5 @@ export class User extends Model<User> {
   coin: number;
   
 }
+
+export default User
