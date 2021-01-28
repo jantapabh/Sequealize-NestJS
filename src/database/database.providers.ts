@@ -13,7 +13,7 @@ export const databaseProviders = [
         password: '1234',
         database: 'psucoin3',
       });
-      sequelize.addModels([]);
+      sequelize.addModels([User]);
       await sequelize.sync();
       return sequelize;
     },
